@@ -58,7 +58,7 @@ void loop()
   sensors.read(sensor_values);
   
   
-  if ((sensor_values[0] > QTR_THRESHOLD) && (sensor_values[0] > QTR_THRESHOLD))        //Left and Right Sensor
+  if ((sensor_values[0] > QTR_THRESHOLD) && (sensor_values[5] > QTR_THRESHOLD))        //Left and Right Sensor
   {
     // if leftmost sensor detects line, reverse and turn to the right
     motors.setSpeeds(-REVERSE_SPEED, -REVERSE_SPEED);
